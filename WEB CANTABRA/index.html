@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificacion de acceso </title>
+    <link rel="icon" href="../img/logoj.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #000000, #000080, #0000FF, #87CEEB, #FFFFFF);
+        }
+
+        .container {
+            text-align: center;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="password"].input-field {
+            border: 2px solid green;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+            transition: all 0.3s ease;
+            color: green;
+            box-shadow: 0 5px 10px rgba(0, 255, 0, 0.2); 
+        }
+
+        input[type="password"].input-field:focus {
+            outline: none;
+            border-color: darkgreen;
+            background-color: #e6ffe6;
+            box-shadow: 0 5px 15px rgba(0, 255, 3, 4.5); 
+        }
+
+        button.verificaracceso {
+            color: white;
+            border-radius: 21px;
+            height: 50px;
+            background-color: green;
+            font-size: x-large;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button.verificaracceso:hover {
+            background-color: darkgreen;
+            transform: scale(1.05);
+        }
+
+        button.verificaracceso:active {
+            transform: scale(1);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img style="width: 220px;" src="../img/text.gif" alt="Texto">
+        <h1>Verificar Acceso</h1>
+        <label for="contrasena">Contraseña</label>
+        <br><br>
+        <input type="password" id="contrasena" class="input-field">
+        <br><br>
+        <button style="
+            color: white;
+            border-radius: 21px;
+            height: 50px;
+            background-color: green;
+            font-size: x-large;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        " class="verificaracceso" type="button" id="verificarBtn">Entrar</button>
+    </div>
+
+    <script>
+        document.getElementById('verificarBtn').addEventListener('click', function() {
+            const contrasena = document.getElementById('contrasena').value;
+            if (contrasena === 'f') {
+                window.location.href = '../administrador.php';
+            } else {
+                alert('Contraseña incorrecta');
+            }
+        });
+    </script>
+</body>
+</html>

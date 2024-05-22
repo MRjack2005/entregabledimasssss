@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image:url(src/webcantabra-bod-R3.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    background-image:url();
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2 );
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+.container.background-image{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    border: blue;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3498db;
+}
+
+.resultado-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#departamentos {
+    display: none;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="password"].input-field {
+    border: 2px solid green; 
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    transition: all 0.3s ease;
+    color: green; 
+}
+
+input[type="password"].input-field:focus {
+    outline: none; 
+    border-color: green; 
+    background-color: #e6ffe6; 
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+
+
